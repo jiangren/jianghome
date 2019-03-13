@@ -17,7 +17,7 @@ const actions = {
     getJson (context) {
         axios.get('http://127.0.0.1:3000/getJson', {
             method: 'GET',
-            mode:'cors',
+            // mode:'cors',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
