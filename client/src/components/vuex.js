@@ -15,7 +15,7 @@ const mutations = {
 
 const actions = {
     getJson (context) {
-        axios.get('http://jiangrenhome.com:3000/getJson', {
+        axios.get('http://www.jiangrenhome.com:3000/getJson', {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
