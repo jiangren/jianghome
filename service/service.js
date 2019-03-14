@@ -1,11 +1,18 @@
 let Koa = require('koa');
 let Router = require('koa-router');
+let static = require('koa-static');
+let path = require('path');
 
+const staticPath = '../client/dist';
 let cors = require('koa2-cors');
 // 引入modejs的文件系统API
 let fs = require('fs');
 
 const app = new Koa();
+app.use(static(
+    path.join(__dirname, staticPath)
+));
+
 const router = new Router();
 app.use(cors({
     origin: function (ctx) {

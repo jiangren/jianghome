@@ -6,19 +6,19 @@
 </template>
 
 <script>
-    import {store} from './vuex'
-    export default {
-        computed: {
-            json () {
-                return store.state.json;
-            }
-        },
-        methods: {
-            getJson () {
-                store.dispatch('getJson');
-            }
+import {store} from './vuex'
+export default {
+    computed: {
+        json () {
+            return store.state.json;
+        }
+    },
+    methods: {
+        getJson () {
+            store.dispatch('getJson');
         }
     }
+}
 </script>
 
 <style scoped>
